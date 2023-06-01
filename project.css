@@ -1,0 +1,460 @@
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* background-color: rgba(1, 1, 36, 0.952); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.952), rgb(5, 102, 105), rgba(0, 0, 0, 0.952));
+  color: rgba(226, 253, 255, 0.959);
+  /* border-left: 40px solid rgba(39, 194, 214, 0.849);
+  border-right: 40px solid rgba(39, 194, 214, 0.849);
+  border-bottom: 40px solid rgb(0, 225, 255); */
+  position: static;
+  margin: auto;
+  text-align: center;
+  /* line-height: 28px;   */
+  padding: 10px;
+  margin-top: 10px;
+  font-size: large;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+p {
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 40px;
+  cursor: pointer;
+	font-size: 1.3em;
+	/* font-variant-caps: small-caps; */
+	line-height: normal;
+	letter-spacing: .03em;
+	margin: auto .025em;
+	text-decoration: none !important;
+	text-transform: lowercase;
+  
+}
+
+
+h1 {
+  color: white;
+  text-shadow: 
+    0 0 2px white,
+    0 0 10px white,
+    0 0 20px blue,
+    0 0 30px blue,
+    0 0 40px blue,
+    0 0 50px blue;
+  animation: blink 1.5s infinite alternate;
+}
+.h1 {
+  display: block;
+  font-size: 40px;
+}
+.h1 {
+  display: block;
+  font-size: 40px/10*6;
+}
+
+@keyframes blink {
+0%   {}
+100% { 
+  text-shadow: 
+    0 0 2px white,
+    0 0 10px white,
+    0 0 20px white,
+    0 0 40px blue,
+    0 0 70px blue,
+    0 0 80px blue;
+}
+}
+
+.h1 {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+  
+.h1:after,.h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #00bfc5;
+  border-top: 1px solid #d0ff01;
+  height: 5px;
+  background-color:#f8f8f8;
+}
+
+.rotate {
+  animation-name: glow;
+}
+
+@keyframes glow {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* .rotate:hover {
+  transform: rotate(10deg);
+} */
+
+#logo {
+  padding: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+form {
+  margin: auto;
+}
+
+.email_form {
+  border: 3px solid rgba(255, 255, 255, 0.548);
+  border-radius: 50px;
+  width: 50%;
+  align-content: center; 
+}
+
+.email_form:hover {
+  box-shadow: -2px 3px 3px #03e2ff, 0px 0px 5px #eeff00, 0px 0px 7px #ff0000;
+  transform: scale(0.9);
+}
+
+#nm {
+  margin: 20px;
+}
+
+#mail {
+  margin: 20px;
+}
+
+#pw {
+  margin: 20px;
+}
+
+.lb {
+  font-weight: bold;
+  color: rgba(226, 253, 255, 0.658);
+}
+
+input {
+  height: 45px;
+  width: 50%;
+  padding-left: 20px;
+  font-size: medium;
+  border-radius: 50em;
+  border: 1px solid #ffffff00;
+  box-shadow: -2px 3px 3px #aaa, 0px 0px 5px #bbbbbbcc, 0px 0px 7px #cccccc80;
+}
+
+input:hover {
+  color:rgb(0, 0, 0);
+  box-shadow: -2px 3px 3px #00ffea, 0px 0px 5px #d9ff00cc, 0px 0px 7px #ff0000;
+  transform: scale(1.1);
+}
+
+input:active {
+  border-color: #f3000080;
+  transform: scale(1);
+}
+
+
+#logo {
+	margin:0 auto;
+	width:200px;
+	font-family:'Lily Script One', cursive;
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+	color:rgb(255, 255, 255);
+	-webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+#logo:hover {
+	color:rgb(98, 231, 255);
+  /* text-shadow: 2px 2px white; */
+}
+
+:root {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color-html: #fbff00;
+    --animation-color-css: #304FFE;
+    --animation-color-js: #40ff59;
+    --fs-size: 3em;
+  }
+  
+  ul {
+    /* padding-top: 20px; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+  }
+  
+  ul li {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    cursor: pointer;
+  }
+  
+  ul li .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    width: 0%;
+    inset: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  
+  ul li:nth-child(1) .hover-text {
+    color: var(--animation-color-html);
+    border-right: var(--border-right) solid var(--animation-color-html);
+    -webkit-text-stroke: 1px var(--animation-color-html);
+  }
+  
+  ul li:nth-child(2) .hover-text {
+    color: var(--animation-color-css);
+    border-right: var(--border-right) solid var(--animation-color-css);
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  
+  ul li:nth-child(3) .hover-text {
+    color: var(--animation-color-js);
+    border-right: var(--border-right) solid var(--animation-color-js);
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  
+  ul li:hover .hover-text {
+    width: 100%;
+  }
+  
+  ul li:nth-child(1):hover .hover-text {
+    filter: drop-shadow(0 0 25px var(--animation-color-html))
+  }
+  
+  ul li:nth-child(2):hover .hover-text {
+    filter: drop-shadow(0 0 25px var(--animation-color-css))
+  }
+  
+  ul li:nth-child(3):hover .hover-text {
+    filter: drop-shadow(0 0 25px var(--animation-color-js))
+  }
+
+  #btn {
+    color: #ffffff00;
+    /*   background: #ffffff80; */
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 1.15vw;
+    padding: 0.5em 2.5em;
+    border-radius: 50em;
+    border: 2px solid #ffffff00;
+    box-shadow: -2px 3px 3px #aaa, 0px 0px 5px #bbbbbbcc, 0px 0px 7px #cccccc80;
+    cursor: pointer;
+    width: fit-content;
+    margin: 20px;
+  }
+  
+  #btn:hover {
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  #btn:active {
+    border-color: #eeeeee80;
+    transform: scale(1);
+  }
+  
+  #btn {
+    background: #8080ff33;
+  }
+  
+  #btn:hover {
+    background: cornflowerblue;
+  }
+  
+  #btn:active {
+    background: #8080ff;
+  }
+
+div {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#main-scroll-div {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid #58c0ce; */
+  margin-top: 20px;
+}
+
+#cover {
+  position: relative;
+  width: 90%;
+  height: 50%;
+}
+#cover::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 150px;
+  background-image: linear-gradient(90deg, black, transparent);
+}
+#cover::after {
+  position: absolute;
+  content: " ";
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 150px;
+  background-image: linear-gradient(-90deg, black, transparent);
+}
+
+#scroll-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.child {
+  min-width: 600px;
+  height: 300px;
+  margin: 1px 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.child::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.child-img {
+  width: 100%;
+  height: 100%;
+}
+
+#icon {
+  color: #00ff2a;
+  background-color: rgb(0, 0, 0);
+  font-size: 50px;
+  outline: none;
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* .slide .hi-slide{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  margin: 115px auto 0;
+}
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  text-align: center;
+  width: 50px;
+  height: 40px;
+  margin-top: -20px;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.7s;
+  font-size: 20px;
+  font-weight: bold;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+  opacity: 1;
+  background-color: white;
+}
+.hi-slide .hi-prev{ 
+  left: 59px;
+}
+
+.hi-slide .hi-prev::before {
+  content: '<';
+}
+.hi-slide .hi-prev { 
+  right: 59px
+}
+
+.hi-slide .hi-next::before {
+  content: '>';
+}
+.hi-slide > ul{
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+.hi-slide › ul > li{
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  left: 377px;
+  right: 377px;
+  top: 147px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 3px solid white;
+  cursor: pointer;
+  background-color: #333;
+}
+
+.hi-slide > ul > li > img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+} */

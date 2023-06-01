@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    <li>
+        <span class="actual-text">&nbsp;Home&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;Home&nbsp;</span>
+    </li>
+    <li>
+        <span class="actual-text">&nbsp;About&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;About&nbsp;</span>
+    </li>
+    <li>
+        <span class="actual-text">&nbsp;Contact&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
+    </li>
+    </ul>
+    <h1 class="h1">Welcome to the Landing page</h1>
+    <h3 class="rotate">We're a start-up that does something</h3>
+    <br><br>
+    <div id="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrollL()"><i class="fas fa-angle-double-left"></i></button>
+        </div>
+        <div id="cover" >
+            <div id="scroll-images">
+                <div class="child"><img class="child-img" src="img/image.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/image2.webp" alt="image"></div>
+                <div class="child"><img class="chitld-img" src="img/image3.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/image5.jpg" alt="image"></div>
+                <div class="child"><img class="child-img" src="img/image6.jpg" alt="image"></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon" onclick="scrollR()"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+    <p class="pg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio placeat dolore a rerum quam libero soluta. Quibusdam beatae dolorum quaerat ab nam reprehenderit fuga ut explicabo! Praesentium a rerum voluptatem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, fugit. Inventore, exercitationem ab accusantium facere dignissimos ut mollitia odio, ea, assumenda laboriosam alias repudiandae dolores. Laudantium molestiae ipsam assumenda temporibus.</p>
+    <p class="pg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, et! Corporis officiis ex, doloribus iure earum eligendi facere velit sed voluptatem ipsam laudantium illo dolorum aliquid delectus vel eveniet? Nisi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor quis unde pariatur repellendus tempore fugit architecto vitae commodi corrupti? Autem sapiente animi impedit commodi voluptas error veritatis natus ipsam.</p>
+   
+</body>
+<form class="email_form" action="thank_you.html" method="get">
+    <h3 id="logo">Sign up now!</h3>
+    <label class="lb" for="nm">Enter Name Here : </label><br>
+    <input id="nm" type="text" placeholder="Name" required><br>
+    <label class="lb" for="mail">Enter Email Here : </label><br>
+    <input id="mail" type="email" placeholder="user@example.com" required><br>
+    <label class="lb" for="pw">Enter Password Here : </label><br>
+    <input id="pw" type="password" placeholder="Password" required><br>
+    <input id="btn" type="submit" value="Submit!">
+</form>
+
+<script src="project.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/jquery.hislide.js"></script>
+<script>
+
+    $('.slide').hiSlide();
+
+</script> -->
+</html>
